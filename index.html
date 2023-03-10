@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+</head>
+<body>
+    <input type="text" id="color1">
+    <input type="text" id="color2">
+    <button onclick="colorMix()">colorMix</button>
+    <script>
+        function colorMix(){
+            let color1 = document.getElementById("color1").value;
+            let color2 = document.getElementById("color2").value;
+            if(((color1=="red") && (color2=="blue")) || ((color1=="blue")&& (color2=="red"))){
+                console.log("purple")
+            }else if(((color1=="red") && (color2=="yellow")) || ((color1=="yellow")&& (color2=="red"))){
+                console.log("orange")
+            }else if(((color1=="blue") && (color2=="yellow")) || ((color1=="yellow")&& (color2=="blue"))){
+                console.log("green")
+            }else{
+                console.log("invalid color combination")
+            }
+
+            // let string1="hellow";
+            // let string2="hellow";
+            //     console.log(string1=="hello")
+        }
+    </script>
+</body>
+</html>
